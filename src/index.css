@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+.sales-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .customer-section {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .text-green-500 {
+    color: #22c55e; 
+  }
+
+.td-styled::before{
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 20px;
+ width: 20px;
+ height: 1px;
+background-color: rgb(0, 0, 0);
+}
+.td-styled::after{
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 18px;
+    right: 10px;
+    width: 5px;
+    border-radius: 50%;
+    height: 5px;
+   background-color: rgb(0, 0, 0);
+   }
+  
