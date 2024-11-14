@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import data from "./data.json"; // Adjust path to your JSON file
+import data from "./data.json"; 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpOutlinedIcon from '@mui/icons-material/ArrowDropUpOutlined';
 import ExpandCircleDownOutlinedIcon from '@mui/icons-material/ExpandCircleDownOutlined';
@@ -15,14 +15,12 @@ function Test() {
             prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
         );
     };
-
     // toggle individual accordion open/close for college data table
     const toggleCollegeAccordion = (index) => {
         setVisibleTableCollege((prev) =>
             prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
         );
     };
-
     return (
         <div className=' w-[80%]  md:container px-6 md:px-0 mx-auto mt-20 border'>
              {/* header static for all colleges */}
