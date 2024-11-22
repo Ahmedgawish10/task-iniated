@@ -24,23 +24,6 @@ function Test() {
     return (
         <div className=' w-[80%]  md:container px-6 md:px-0 mx-auto mt-20 border'>
              {/* header static for all colleges */}
-            <div className="px-6 md:px-0 overflow-x-auto  z-50 bg-gray-100 w-[74%] mx-auto md:container fixed top-0  scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-blue-500 scrollbar-track-gray-300">
-                <div className=" !w-[74%] mx-auto md:w-[100%]   flex">
-                    <div className="head-table flex">
-                    <div className="f">대</div>
-                    <div className="f">학</div>
-                    <div className="f">교 </div>
-                    <div className="f">(3)</div>
-                    </div>
-                    {data.Months.map((month) => (
-                        <div key={month.number} className="flex px-9">
-                            <div>{month.number}</div>
-                            <div>{month.name}</div>
-                        </div>
-                    ))}
-                </div>
-
-            </div>
             {/* data  */}
             <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-black dark:bg-gray-800 text-white dark:text-white">
                 {data.Colleges.map((college, customrIndex) => (
